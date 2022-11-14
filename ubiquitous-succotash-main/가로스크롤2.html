@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <style>
+        *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+}
+.container section{
+  min-width:100%;
+  height:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:pink;
+}
+.container section:nth-of-type(2n){
+  background:green;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container"data-0="transform:translateX(0%)"
+         data-1000="transform:translateX(-400%)"
+     >
+  <section>
+    <div class="content"
+         >
+      <h2>Section1</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit esse, iusto dignissimos obcaecati aperiam maxime. Eius dolorum mollitia eaque necessitatibus, aut numquam dolor expedita hic. Incidunt pariatur fugiat iste quos!</p>
+    </div>
+  </section>
+    <section>
+    <div class="content">
+      <h2>Section2</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit esse, iusto dignissimos obcaecati aperiam maxime. Eius dolorum mollitia eaque necessitatibus, aut numquam dolor expedita hic. Incidunt pariatur fugiat iste quos!</p>
+    </div>
+  </section>
+    <section>
+    <div class="content">
+      <h2>Section3</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit esse, iusto dignissimos obcaecati aperiam maxime. Eius dolorum mollitia eaque necessitatibus, aut numquam dolor expedita hic. Incidunt pariatur fugiat iste quos!</p>
+    </div>
+  </section>
+    <section>
+    <div class="content">
+      <h2>Section4</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit esse, iusto dignissimos obcaecati aperiam maxime. Eius dolorum mollitia eaque necessitatibus, aut numquam dolor expedita hic. Incidunt pariatur fugiat iste quos!</p>
+    </div>
+  </section>
+</div>
+<script>
+    var s = skrollr.init();
+</script>
+</body>
+</html>
